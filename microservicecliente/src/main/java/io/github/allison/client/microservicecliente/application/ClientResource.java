@@ -35,11 +35,9 @@ public class ClientResource {
 
         return ResponseEntity.created(headerLocation).build();
     }
-
     @GetMapping(params = "cpf")
-    public ResponseEntity dataClient(@RequestParam("cpf")  String cpf){
+    public ResponseEntity dataClient(@RequestParam("cpf") String cpf){
         var client = service.getByCPF(cpf);
-
         if(client.isEmpty()){
             return ResponseEntity.notFound().build();
         }
