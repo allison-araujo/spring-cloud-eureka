@@ -23,8 +23,8 @@ public class Client {
     private Integer age;
 
 
-    public Client(Long id, String cpf, String name, Integer age) {
-        this.id = id;
+    public Client(String cpf, String name, Integer age) {
+
         this.cpf = cpf;
         this.name = name;
         this.age = age;
