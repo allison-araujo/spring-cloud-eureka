@@ -4,6 +4,7 @@ package io.github.allison.client.microservicecliente.application;
 import io.github.allison.client.microservicecliente.application.representation.ClientSaveRequest;
 import io.github.allison.client.microservicecliente.domain.Client;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -13,12 +14,14 @@ import java.net.URI;
 @RestController
 @RequestMapping("client")
 @RequiredArgsConstructor
+@Slf4j
 public class ClientResource {
 
     private final ClienteService service;
 
     @GetMapping
     public String status(){
+        log.info("get status microservices client");
         return "ok";
 
     }

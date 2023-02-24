@@ -10,3 +10,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
 
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
