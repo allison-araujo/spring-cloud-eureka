@@ -12,4 +12,6 @@ public class MscardsApplication {
 		SpringApplication.run(MscardsApplication.class, args);
 	}
 
+	System.out.println("a")
+
 }

@@ -11,7 +11,7 @@ public class cardsResouce {
 
     @GetMapping
     public String status(){
-        return "ok";
+        return "ok MsCards";
     }
 
 

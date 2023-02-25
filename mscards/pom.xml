@@ -80,7 +80,7 @@
 				<configuration>
 					<excludes>
 						<exclude>
-							<groupId>org.projectlombok</groupId>
+							<groupId>org.projectlomboka</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
