@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CardService {
 
-    private  final CardRepository repository;
+    private final CardRepository repository;
 
     @Transactional
     public Card save(Card card){
