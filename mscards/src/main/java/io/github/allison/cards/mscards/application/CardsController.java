@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("cards")
 @RequiredArgsConstructor
-public class CardsResource {
+public class CardsController {
 
     private final CardService cardService;
     private final ClientCardService clientCardService;

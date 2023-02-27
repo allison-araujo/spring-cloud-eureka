@@ -13,7 +13,7 @@ import java.util.List;
 public class ClientCardService {
 
 
-    private ClientCardRepository repository;
+    private final ClientCardRepository repository;
 
     public List<ClientCard> listCardByCpf(String cpf){
         return repository.findByCpf(cpf);

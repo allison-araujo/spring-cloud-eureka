@@ -20,7 +20,8 @@ public class MicroservicescloudgatewayApplication {
 	public RouteLocator routes(RouteLocatorBuilder builder){
 		return builder
 				.routes()
-					.route(r -> r.path("/client/**").uri("lb://msclient") )
+				.route(r -> r.path("/client/**").uri("lb://msclient") )
+				.route(r -> r.path("/cards/**").uri("lb://mscards"))
 				.build();
 	}
 
