@@ -1,6 +1,6 @@
 spring:
   application:
-    name: mscredavaliable
+    name: msavaliablecredit
 
 server:
   port: 0
