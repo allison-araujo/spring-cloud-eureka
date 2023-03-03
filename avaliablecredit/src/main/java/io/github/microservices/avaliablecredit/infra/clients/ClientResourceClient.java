@@ -1,4 +1,4 @@
-package io.github.microservices.avaliablecredit.infra;
+package io.github.microservices.avaliablecredit.infra.clients;
 
 
 import io.github.microservices.avaliablecredit.domain.model.DataClient;
@@ -8,10 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(value = "msclient", path = "/client")
-public interface ClientResourceForeign {
+public interface ClientResourceClient {
 
      @GetMapping(params = "cpf")
      ResponseEntity<DataClient> dataClient(@RequestParam("cpf") String cpf);
+
+
+
 
 
 }
