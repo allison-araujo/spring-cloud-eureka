@@ -10,15 +10,15 @@ import java.math.BigDecimal;
 @Entity
 @NoArgsConstructor
 @Data
+
 public class ClientCard {
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String cpf;
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "id_card")
-    private Card Card;
+    private Card cards;
     private BigDecimal limit;
 }

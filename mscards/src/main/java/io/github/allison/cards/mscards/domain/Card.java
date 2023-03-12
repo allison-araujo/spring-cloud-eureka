@@ -11,21 +11,23 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 public class Card {
-
     @Id
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
+
     private String name;
     @Enumerated(EnumType.STRING)
+
     private FlagCard flag;
     private BigDecimal income;
-
     private BigDecimal basicLimit;
 
-    public Card(String name, FlagCard flag, BigDecimal income, BigDecimal basicLimite) {
+    public Card(String name, FlagCard flag, BigDecimal income, BigDecimal basicLimit) {
         this.name = name;
         this.flag = flag;
         this.income = income;
-        this.basicLimit = basicLimite;
+        this.basicLimit = basicLimit;
     }
 }

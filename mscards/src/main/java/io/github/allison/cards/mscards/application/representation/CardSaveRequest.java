@@ -8,7 +8,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 @Data
-public class CardSaveRequestDTO {
+public class CardSaveRequest {
 
     private String name;
     private FlagCard flag;
